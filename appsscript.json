@@ -1,0 +1,23 @@
+{ 
+  "oauthScopes": [
+    "https://www.googleapis.com/auth/gmail.addons.execute", 
+    "https://www.googleapis.com/auth/gmail.readonly",
+    "https://www.googleapis.com/auth/gmail.compose"
+  ],
+  "runtimeVersion": "V8",
+  "gmail": {
+    "name": "Email Draft Duplicator",
+    "logoUrl": "https://raw.githubusercontent.com/jnbli/Email-Draft-Duplicator/master/Logo.png",
+    "homepageTrigger": {
+      "enabled": true,
+      "runFunction": "buildAddOn"
+    },
+    "contextualTriggers": [{
+      "unconditional": {},
+      "onTriggerFunction": "buildAddOn"
+    }],
+    "primaryColor": "#4285F4",
+    "secondaryColor": "#4285F4",
+    "openLinkUrlPrefixes": ["httpsΩ://mail.google.com/"]
+  }
+}
